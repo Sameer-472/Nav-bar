@@ -1,0 +1,141 @@
+* , ::after , ::before{
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:  hsl(210, 36%, 96%);
+  line-height: 1.5;
+  font-size: 0.75rem;
+  /* color: antiquewhite; */
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: 1rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+nav{
+  background-color: #fff;;
+  /* box-shadow: 3px solid blac; */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-toggle{
+  font-size: 1.5rem;
+  background: transparent;
+  transition: linear;
+  cursor: pointer;
+  border-style: none;
+}
+
+.nav-toggle:hover{
+  transform: rotate(90deg);
+  transition: all 0.2s linear;
+}
+
+.logo{
+  height: 40px;
+}
+
+.links a{
+  /* color: aliceblue; */
+  /* background: aqua; */
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+}
+
+
+.social-icons{
+  display:none;
+}
+.links{
+  height: 0rem;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  /* display: none; */
+  /* display: inline-block; */
+  /* width: 40rem; */
+  /* transition: all linear; */
+  /* margin-left: 1.5rem; */
+  /* background-color: aquamarine; */
+  /* padding: 1.5rem; */
+} 
+
+.links a:hover{
+  background-color: bisque;
+  padding-left: 1.5rem;
+}
+
+ .show-links {
+  height: 10rem; 
+  display: block ;
+}
+
+@media only screen and (min-width:800px){
+  body{
+    font-size: 1rem;
+  }
+  nav{
+    background-color:#fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .nav-center{
+    max-width: 1170px;
+    /* background: yellow; */
+    margin: 0% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header{
+    padding: 0;
+    /* background-color: white;    */
+  }
+  .nav-toggle{
+    display: none;
+  }
+  .links{
+    /* background-color: violet; */
+    height: auto;
+    display: flex;
+  }
+  .links a{
+    /* background-color: turquoise; */
+    padding: 0%;
+    margin: 0% 1rem;
+  }
+  .links a:hover{
+    padding: 0%;
+    background-color: transparent;
+  }
+  .social-icons{
+    display: flex;
+  }
+  .social-icons a{
+    margin: 0 0.5rem;
+    transition: all 0.3s linear ;
+    color: turquoise;
+  }
+  .social-icons a:hover{
+    color: blue;
+  }
+}
